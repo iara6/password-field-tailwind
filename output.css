@@ -574,20 +574,77 @@ video {
   visibility: visible;
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.left-\[0\.8rem\]{
+  left: 0.8rem;
+}
+
+.right-\[0\.5rem\]{
+  right: 0.5rem;
+}
+
+.top-1\/2{
+  top: 50%;
+}
+
+.z-\[15\]{
+  z-index: 15;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
 .mb-8{
   margin-bottom: 2rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
 }
 
 .block{
   display: block;
 }
 
+.flex{
+  display: flex;
+}
+
 .grid{
   display: grid;
 }
 
+.h-16{
+  height: 4rem;
+}
+
 .h-screen{
   height: 100vh;
+}
+
+.w-16{
+  width: 4rem;
+}
+
+.w-\[18px\]{
+  width: 18px;
+}
+
+.-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @keyframes glowing{
@@ -604,6 +661,10 @@ video {
   animation: glowing 1.5s ease-in-out infinite alternate;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .items-center{
   align-items: center;
 }
@@ -612,13 +673,25 @@ video {
   justify-content: center;
 }
 
+.rounded-full{
+  border-radius: 9999px;
+}
+
 .rounded-lg{
   border-radius: 0.5rem;
 }
 
-.bg-font-clr-1{
-  --tw-bg-opacity: 1;
-  background-color: rgb(45 45 45 / var(--tw-bg-opacity));
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-font-clr-2{
+  --tw-border-opacity: 1;
+  border-color: rgb(99 89 126 / var(--tw-border-opacity));
 }
 
 .bg-white{
@@ -628,6 +701,11 @@ video {
 
 .bg-custom-radial{
   background-image: radial-gradient(circle at 50% 0%, rgb(88, 54, 109) 16.4%, rgb(45, 46, 72) 68.2%, rgb(33, 29, 44) 99.1%);
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .px-12{
@@ -640,6 +718,30 @@ video {
   padding-bottom: 2rem;
 }
 
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
+.pb-2\.5{
+  padding-bottom: 0.625rem;
+}
+
+.pl-\[2\.1rem\]{
+  padding-left: 2.1rem;
+}
+
+.pr-8{
+  padding-right: 2rem;
+}
+
+.pt-2{
+  padding-top: 0.5rem;
+}
+
+.pt-2\.5{
+  padding-top: 0.625rem;
+}
+
 .font-oswald{
   font-family: Oswald, sans-serif;
 }
@@ -648,9 +750,37 @@ video {
   font-size: 1.3rem;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
 .text-font-clr-1{
   --tw-text-opacity: 1;
   color: rgb(45 45 45 / var(--tw-text-opacity));
+}
+
+.text-font-clr-2{
+  --tw-text-opacity: 1;
+  color: rgb(99 89 126 / var(--tw-text-opacity));
 }
 
 .shadow-\[0_0_15px_rgba\(217\2c 159\2c 255\2c 0\.5\)\2c _0_0_35px_rgba\(217\2c 159\2c 255\2c 0\.6\)\]{
@@ -678,86 +808,17 @@ video {
   --clr-1: rgba(177, 99, 225, 0.3);
 }
 
-
-h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.3rem;
-}
-
-
-.user-information {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.user-avatar {
-  margin-right: 0.5rem;
-}
-
-.user-avatar img {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.account-type {
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--font-clr-2);
-}
-
-.name {
-  font-weight: 700;
-}
-
-.password-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.fa-lock {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0.8rem;
-  color: var(--font-clr-2);
-  font-size: 0.9rem;
-}
-
-input {
-  border-radius: 6px;
-  border: 1px solid var(--font-clr-2);
-  padding: 0.6rem 2rem 0.6rem 2.1rem;
-  font-size: 0.9rem;
-}
-
-input:focus {
-  outline: 2px solid var(--clr);
-}
-
-.eye-container {
-  position: absolute;
-  right: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 15;
-}
-
 .fa-eye-slash,
 .fa-eye {
   font-size: 0.95rem;
   color: var(--font-clr-2);
   cursor: pointer;
-}
+}///////
 
 .fa-regular.fa-eye {
   display: none;
   width: 18px;
-}
+}///////
 
 .buttons {
   display: flex;
@@ -829,3 +890,11 @@ button:hover {
   text-decoration: underline;
 }
  */
+
+.focus\:outline-2:focus{
+  outline-width: 2px;
+}
+
+.focus\:outline-clr:focus{
+  outline-color: rgb(134, 46, 189);
+}
