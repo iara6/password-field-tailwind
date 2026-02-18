@@ -3,10 +3,23 @@
 ***************/
 
 const switchBtn = document.querySelector('.switch-button');
+const switchCircle = document.querySelector('.switch');
+const rootStyles = getComputedStyle(document.documentElement);
 
 switchBtn.addEventListener('click', () => {
   switchBtn.classList.toggle('slide');
+
+  if (switchBtn.classList.contains('slide')) {
+    switchBtn.style.backgroundColor = rootStyles.getPropertyValue('--clr-1');
+    switchCircle.style.left = '1rem';
+  } else {
+    switchBtn.style.backgroundColor = "white";
+    switchCircle.style.left = '0';
+  }
 });
+
+
+
 
 
 /****************

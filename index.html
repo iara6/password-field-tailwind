@@ -9,9 +9,12 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <title>Password Field</title>
 </head>
+<div class="bg-violet-500 text-white p-4">
+  Tailwind test
+</div>
 <body class="h-screen grid justify-center items-center text-font-clr-1 font-oswald bg-custom-radial">
   <div class="container bg-white py-8 px-12 rounded-lg shadow-[0_0_15px_rgba(217,159,255,0.5),_0_0_35px_rgba(217,159,255,0.6)] animate-glowing">
-    <h2 class="mb-8 text-[1.3rem] text-clr-2">Enter your password</h2>
+    <h2 class="mb-8 text-[1.3rem] text-clr-2 font-bold">Enter your password</h2>
     <div class="user-information flex items-center mb-4">
       <div class="user-avatar mr-2">
         <img class="h-16 w-16 object-cover rounded-full" src="img-1.jpg">
@@ -33,16 +36,16 @@
         <i class="fa-regular fa-eye-slash text-base cursor-pointer text-font-clr-2 "></i>
       </div>
     </div>
-    <div class="buttons">
-      <div class="switch-button-container">
-        <div class="switch-button">
-          <span class="switch"></span>
+    <div class="buttons flex justify-between items-center mb-8">
+      <div class="switch-button-container flex items-center text-xs font-semibold">
+        <div class="switch-button h-[1.6rem] w-[2.7rem] rounded-[1rem] mr-[5px] relative flex items-center cursor-pointer border border-font-clr-2 transition-all duration-200 ease-out">
+          <span class="switch absolute z-10 left-0 h-[1.2rem] w-[1.2rem] bg-clr transition-all duration-200 ease-out rounded-full mx-[3.2px]"></span>
         </div>
         Stay signed in
       </div>
-      <button class="continue">Continue</button>
+      <button class="continue text-xs font-semibold text-white rounded-md cursor-pointer transition-all duration-[350ms] ease-out bg-clr border-0 py-[0.6rem] px-[0.7rem] hover:shadow-[inset_0_0_0_2em_theme(colors.font-clr-2)]">Continue</button>
     </div>
-    <div class="reset">
+    <div class="reset text-xs font-semibold cursor-pointer underline">
       Reset password
     </div>
   </div>
